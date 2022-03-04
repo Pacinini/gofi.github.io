@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GoFi Login Page</title>
+    </head>
+    <body>
+        
+        <!-- Using the BEM naming convention -->
+
+        <div class="login-container">
+            <form class="form" id="login">
+
+                <h1 class="form__title">Login</h1>
+                <!-- <div class="form__message--error">Incorect username or password</div> -->
+                <div class="form__input-group">
+
+                    <input type="text" class="form__input" placeholder="Username or email" autofocus>
+
+                </div>
+                <div class="form__input-group">
+
+                    <input type="password" class="form__input" placeholder="Password" autofocus>
+
+                </div>
+                <button class="form__button" type="submit">Continue</button>
+                <p class="form__text">
+
+                    <a id="linkResetPassword" href="">Forgot your password?</a>
+
+                </p>
+                <p class="form__text">
+
+                    <a id="linkCreateAccount" href="">Don't have an account? Create account here!</a>
+
+                </p>
+
+            </form>
+        </div>
+
+
+        <script src="./login.js"></script>
+    </body>
+</html>
